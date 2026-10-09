@@ -5,10 +5,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Create a department
+
         Department department = new Department(1, "IT");
 
-        // Create a commission employee
+
         CommissionEmployee employee1 = new CommissionEmployee(
                 101,
                 "Ahmed",
@@ -19,7 +19,7 @@ public class Main {
                 10000
         );
 
-        // Create a monthly employee
+
         MonthlyEmployee employee2 = new MonthlyEmployee(
                 102,
                 "Sara",
@@ -31,7 +31,7 @@ public class Main {
                 true
         );
 
-        // Create an hourly employee
+
         HourlyEmployee employee3 = new HourlyEmployee(
                 103,
                 "Omar",
@@ -42,20 +42,20 @@ public class Main {
                 150
         );
 
-        // Add employees to the department
+
         department.addEmployee(employee1);
         department.addEmployee(employee2);
         department.addEmployee(employee3);
 
-        // Set department manager
+
         department.setManager(employee2);
 
-        // Print all employees
+
         System.out.println("===== Employee Management System =====");
 
         department.printAllEmployees();
 
-        // Print individual salaries
+
         System.out.println("\n===== Employee Salaries =====");
 
         System.out.println(
@@ -73,7 +73,7 @@ public class Main {
                         + employee3.calculateSalary()
         );
 
-        // Print total payroll
+
         System.out.println("\nTotal Department Payroll: "
                 + department.calculateTotalPayroll());
     }
